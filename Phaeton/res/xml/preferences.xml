@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+		android:title="Login">
+    
+	    <CheckBoxPreference 
+	        android:key="signInAutomatically"
+	    	android:title="Sign-in automatically"
+	    	android:summary="Select to enable automatic sign-in on startup"
+	    	android:defaultValue="false" />
+	    
+    </PreferenceCategory>
+	    
+    <PreferenceCategory
+		android:title="Application">
+    
+	    <CheckBoxPreference
+			android:key="enableGoogleAnalytics"
+			android:title="Google Analytics"
+			android:summary="Select to enable Google Analytics"
+			android:defaultValue="false" />
+	    
+	</PreferenceCategory>
+
+    <PreferenceCategory
+		android:title="Error Reporting">   
+    
+	    <CheckBoxPreference 
+	        android:key="acra.enable"
+	    	android:title="Send error reports"
+	    	android:summary="Select to enable the sending of an error report if the application crashes"
+	    	android:defaultValue="true" />
+	   
+	   </PreferenceCategory>
+    
+</PreferenceScreen>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	style="?viewContainer">
+    
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+        <include layout="@layout/title_subtitle_header" />
+        
+        <ScrollView
+			android:layout_width="fill_parent"
+        	android:layout_height="fill_parent">        
+        
+	        <LinearLayout android:layout_width="fill_parent" 
+			    android:layout_height="fill_parent" 
+			    android:orientation="vertical" 
+			    style="?contentContainer">
+	        
+		        <TextView
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="Name"
+			        style="?textFieldTitle" />
+		        
+		        <TextView
+		            android:id="@+id/nameTextView"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        style="?textLarge" />		                
+	
+			</LinearLayout>	        
+
+		</ScrollView>	        
+	        	        
+    </LinearLayout>
+    
+</RelativeLayout>

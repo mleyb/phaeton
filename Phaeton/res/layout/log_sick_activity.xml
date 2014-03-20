@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	style="?viewContainer">
+    
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+		<include layout="@layout/title_subtitle_header" />
+
+		<ScrollView
+			android:layout_width="fill_parent"
+        	android:layout_height="fill_parent">
+		
+			<LinearLayout android:layout_width="fill_parent" 
+			    android:layout_height="fill_parent" 
+			    android:orientation="vertical" 
+			    style="?contentContainer">
+				
+			    <TextView
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:text="@string/time"
+				    style="?textFieldTitle" />
+				
+				<com.bluezero.phaeton.widgets.TimePickerButton 
+        			android:id="@+id/timeButton" 
+        			android:layout_width="fill_parent" 
+        			android:layout_height="wrap_content" 
+        			style="?dateTimePickerButton" />		  
+			    
+				<TextView
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="Description"
+			        style="?textFieldTitle" />
+		
+				<com.bluezero.phaeton.widgets.FilteredEditText
+			        android:id="@+id/descriptionEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+					android:singleLine="false" 
+			        android:inputType="textMultiLine"
+					android:minLines="3"
+					android:maxLines="5"
+		    		android:scrollbars="vertical"     
+		    		android:hint="Enter a description of the sickness..."
+					android:imeOptions="actionNext"
+					style="?editText" />		
+							    
+				<TextView
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="Details"
+			        style="?textFieldTitle" />
+			
+				<com.bluezero.phaeton.widgets.FilteredEditText
+			        android:id="@+id/detailsEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+					android:minLines="5"
+					android:maxLines="10"   
+					android:padding="5dip"
+					android:imeOptions="actionDone"
+					style="?detailsEditText" />
+					
+				<CheckBox
+					android:id="@+id/doctorRecommendedCheckBox"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Doctor recommended?"
+			        style="?checkBox" />
+						  
+			</LinearLayout>			
+			
+		</ScrollView>
+			
+    </LinearLayout>
+    
+    <include layout="@layout/confirm_button_bar" />	
+        
+</RelativeLayout>

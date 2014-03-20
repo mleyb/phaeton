@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	style="?viewContainer">
+    
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+		<include layout="@layout/title_subtitle_header" />
+
+		<ScrollView
+			android:layout_width="fill_parent"
+        	android:layout_height="fill_parent">
+		
+			<LinearLayout android:layout_width="fill_parent" 
+			    android:layout_height="fill_parent" 
+			    android:orientation="vertical" 
+			    style="?contentContainer">
+	
+			    <TextView
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:text="@string/time"
+				    style="?textFieldTitle" />
+				
+			    <com.bluezero.phaeton.widgets.TimePickerButton 
+        			android:id="@+id/timeButton" 
+        			android:layout_width="fill_parent" 
+        			android:layout_height="wrap_content" 
+        			style="?dateTimePickerButton" />	
+			    
+			    <TextView
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="Description"
+			        style="?textFieldTitle" />
+		
+				<com.bluezero.phaeton.widgets.FilteredEditText
+			        android:id="@+id/descriptionEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+					android:minLines="3"
+					android:maxLines="5"     
+					android:hint="Enter a description of the snack..."
+					android:imeOptions="actionDone"
+					style="?editText" />				    			   
+		        
+			    <TextView
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:text="Amount Consumed"
+				    style="?textFieldTitle" />
+			    
+		    	<Spinner 
+					android:id="@+id/spinnerAmount" 
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content" 
+					android:prompt="@string/select_amount"/>
+			    
+			</LinearLayout>		    
+
+		</ScrollView>			
+					    							    
+    </LinearLayout>
+    
+    <include layout="@layout/confirm_button_bar" />
+            
+</RelativeLayout>
+
+
+
+
+
+
+    
+	
+		
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+

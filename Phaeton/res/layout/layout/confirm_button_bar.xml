@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/confirmButton"
+        style="?confirmButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:drawableLeft="@drawable/tick_button"
+        android:onClick="confirmClick"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="Confirm" />
+
+</LinearLayout>

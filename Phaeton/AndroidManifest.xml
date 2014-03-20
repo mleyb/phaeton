@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bluezero.phaeton"
+    android:versionCode="2"
+    android:versionName="1.0.0"
+    android:installLocation="auto">
+
+    <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="17" />
+    
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="true" />
+        
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+	<uses-permission android:name="com.android.vending.BILLING" />
+    
+    <permission android:name="com.bluezero.phaeton.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+	<uses-permission android:name="com.bluezero.phaeton.permission.C2D_MESSAGE" /> 
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    
+    <application 
+        android:name="PhaetonApplication"
+        android:icon="@drawable/ic_launcher" 
+        android:label="@string/app_name"     
+        android:logo="@drawable/logo"
+        android:theme="@style/Phaeton"
+        android:hardwareAccelerated="true"
+        android:allowBackup="false">
+        
+        <!-- Activities -->        
+        <activity android:name=".SignInActivity"
+            	  android:noHistory="false"
+                  android:configChanges="orientation" 
+                  android:screenOrientation="portrait"
+                  android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SelectChildActivity" android:configChanges="orientation" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".AddNewChildActivity" android:configChanges="orientation" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".SelectActionActivity" android:configChanges="orientation" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".PreferencesActivity" android:configChanges="orientation" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".LogBottleActivity" android:configChanges="orientation" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+		<activity android:name=".LogSleepActivity" android:configChanges="orientation" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />		
+		<activity android:name=".LogMealActivity" android:configChanges="orientation" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+		<activity android:name=".LogSnackActivity" android:configChanges="orientation" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+		<activity android:name=".LogSickActivity" android:configChanges="orientation" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+		<activity android:name=".LogMedicineActivity" android:configChanges="orientation" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+		<activity android:name=".LogNoteActivity" android:configChanges="orientation" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+		<activity android:name=".LogMilestoneActivity" android:configChanges="orientation" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+		<activity android:name=".LogActivityActivity" android:configChanges="orientation" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+		<activity android:name=".LogNappyActivity" android:configChanges="orientation" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+		<activity android:name=".ChildInfoActivity" android:configChanges="orientation" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+		<activity android:name=".MyInfoActivity" android:configChanges="orientation" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+		<activity android:name=".LogFirstAidActivity" android:configChanges="orientation" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+		<activity android:name=".LogDrinkActivity" android:configChanges="orientation" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+				
+		<!-- Services -->		
+		<service android:name="com.bluezero.phaeton.services.air.AirService" android:enabled="true" />
+		<service android:name=".GCMIntentService" />
+				
+		<!-- Receivers  -->
+		<receiver 
+		    android:name="com.google.android.gcm.GCMBroadcastReceiver"
+		    android:permission="com.google.android.c2dm.permission.SEND">
+    		<intent-filter>
+        		<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            	<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+            	<category android:name="com.bluezero.phaeton" />
+    		</intent-filter>
+		</receiver>
+				
+    </application>
+
+</manifest>

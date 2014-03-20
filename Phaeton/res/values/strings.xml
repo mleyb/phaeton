@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Kiddycare Diary</string>
+    <string name="main_header">Select a child to create a diary entry</string>    
+    <string name="nappy_change_button">Nappy</string>
+    <string name="log_new_activity_header">Select the type of entry to create</string>
+    <string name="radio_none">None</string>
+    <string name="radio_full">Full</string>
+    <string name="header_text_placeholder">HEADER TEXT HERE</string>
+    <string name="add_new_child_header">Enter details for a new child</string>
+    <string name="child_info_header">Kiddycare Diary details</string>
+    <string name="my_info_header">Kiddycare Diary details</string>
+	<string name="first_aid_header">Enter details of first aid administered</string>
+    <string name="nappy_header">Enter details of the nappy change</string>
+    <string name="sleep_header">Enter details of the period of sleep</string>
+    <string name="bottle_header">Enter details of the bottle</string>
+    <string name="activity_header">Enter details of the activity</string>
+    <string name="meal_header">Enter details of the meal</string>
+    <string name="medicine_header">Enter details of the medicine administered</string>
+    <string name="milestone_header">Enter details of the development milestone</string>
+    <string name="note_header">Enter the note details</string>
+    <string name="sick_header">Enter details of the episode of sickness</string>
+    <string name="snack_header">Enter details of the snack eaten</string>
+    <string name="drink_header">Enter details of the drink consumed</string>
+    <string name="first_aid_list_item">Record details of first aid administered</string>
+    <string name="nappy_list_item">Record details of a nappy change</string>
+    <string name="sleep_list_item">Record details of a period of sleep</string>
+    <string name="bottle_list_item">Record details of a bottle consumed</string>
+    <string name="activity_list_item">Record details of an activity</string>
+    <string name="meal_list_item">Record details of a meal eaten</string>
+    <string name="medicine_list_item">Record details of medicine administered</string>
+    <string name="milestone_list_item">Record details of a development milestone</string>
+    <string name="note_list_item">Record a note</string>
+    <string name="sick_list_item">Record details of an episode of sickness</string>
+    <string name="snack_list_item">Record details of a snack eaten</string>
+    <string name="drink_list_item">Record details of a drink consumed</string>
+    <string name="select_amount">Select amount...</string>
+    <string name="select_meal">Select amount...</string>
+    <string name="dirty">Dirty</string>
+    <string name="start">Start Time</string>
+    <string name="end">End Time</string>
+    <string name="confirm">Confirm</string>    
+    <string name="time">Time</string>
+    <string name="about">Copyright 2013 Blue Zero</string>
+    <string name="app_link">http://www.kiddycarediary.com</string>              
+    <string name="bluezero_link">http://www.bluezero.co.uk</string>
+        	
+    <string-array name="bottle_amount_consumed_items">
+		<item>Full</item>		
+		<item>Three Quarters</item>
+		<item>Half</item>
+		<item>One Quarter</item>
+		<item>None</item>
+	</string-array>           
+	
+    <string-array name="meal_type_items">
+		<item>Breakfast</item>		
+		<item>Lunch</item>
+		<item>Dinner</item>
+		<item>Supper</item>
+	</string-array>
+    
+    <string-array name="meal_amount_consumed_items">
+		<item>All</item>		
+		<item>Most</item>
+		<item>Half</item>
+		<item>Some</item>
+		<item>None</item>
+	</string-array> 
+	
+	<string-array name="snack_amount_consumed_items">
+		<item>All</item>		
+		<item>Most</item>
+		<item>Half</item>
+		<item>Some</item>
+		<item>None</item>
+	</string-array> 
+        
+    <!-- Unlicensed dialog messages -->
+    <string name="unlicensed_dialog_title">Application not licensed</string>
+    <string name="unlicensed_dialog_body">This application is not licensed. Please purchase it from Android Market.</string>
+    <string name="unlicensed_dialog_retry_body">Unable to validate license. Check to see if a network connection is available.</string>
+    <string name="buy_button">Buy app</string>
+    <string name="retry_button">Retry</string>
+    <string name="quit_button">Exit</string>
+	
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<style name="Phaeton" parent="android:Theme">
+
+	    <item name="android:actionBarStyle">@style/ActionBarPhaeton</item>  
+    	<item name="android:editTextStyle">@style/EditTextPhaeton</item>
+    	<item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewPhaeton</item>
+    	<item name="android:checkboxStyle">@style/CheckBoxPhaeton</item>
+    	<item name="android:radioButtonStyle">@style/RadioButtonPhaeton</item>
+    	<item name="android:buttonStyle">@style/ButtonPhaeton</item>
+    	<item name="android:imageButtonStyle">@style/ImageButtonPhaeton</item>
+    	<item name="android:spinnerStyle">@style/SpinnerPhaeton</item>
+    	<item name="android:dropDownSpinnerStyle">@style/SpinnerPhaeton.DropDown</item>
+    	<item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemPhaeton</item>    	
+    	<item name="android:seekBarStyle">@style/SeekBarPhaeton</item>
+    	<item name="android:buttonStyleToggle">@style/TogglePhaeton</item>
+    	<item name="android:listViewStyle">@style/ListViewPhaeton</item>
+    	<item name="android:listViewWhiteStyle">@style/ListViewPhaeton.White</item>
+    	<item name="android:spinnerItemStyle">@style/SpinnerItemPhaeton</item>
+
+    	<item name="textSubheader">@style/TextSubHeaderPhaeton</item>
+		<item name="textExtraLarge">@style/TextExtraLargePhaeton</item>
+		<item name="textExtraLargeBold">@style/TextExtraLargeBoldPhaeton</item>
+		<item name="textLarge">@style/TextLargePhaeton</item>
+		<item name="textLargeBold">@style/TextLargeBoldPhaeton</item>
+		<item name="textRegular">@style/TextRegularPhaeton</item>
+		<item name="textRegularBold">@style/TextRegularBoldPhaeton</item>
+		<item name="textFieldTitle">@style/TextFieldTitlePhaeton</item>
+		<item name="textToast">@style/TextToastPhaeton</item>
+		
+		<item name="checkBox">@style/CheckBoxPhaeton</item>
+    	
+    	<item name="confirmButton">@style/ConfirmButtonPhaeton</item>
+		<item name="linkButton">@style/LinkButtonPhaeton</item>		
+		<item name="dateTimePickerButton">@style/DateTimePickerButtonPhaeton</item>
+		
+		<item name="listView">@style/ListViewPhaeton</item>
+		<item name="listDivider">@style/ListDividerPhaeton</item>
+		<item name="listItem">@style/ListItemPhaeton</item>
+		<item name="listItemLarge">@style/ListItemLargePhaeton</item>
+		
+		<item name="editText">@style/EditTextPhaeton</item>
+		<item name="detailsEditText">@style/DetailsEditTextPhaeton</item>
+    	
+		<item name="progressBar">@style/ProgressBarPhaeton</item>
+		
+		<item name="viewContainer">@style/ViewContainerPhaeton</item>
+		<item name="contentContainer">@style/ContentContainerPhaeton</item>
+		
+  </style>
+	
+</resources>

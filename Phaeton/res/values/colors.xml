@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>	
+  	    
+  	<color name="kd_core_blue">#77C4D9</color>
+  	<color name="kd_core_blue_light">#95D1E1</color>
+  	<color name="kd_core_blue_lightest">#A4D4E6</color>
+  	<color name="kd_core_orange">#EDB75C</color>
+  	
+	<color name="pressed_phaeton">#CC6eb4c7</color>
+  	
+</resources>

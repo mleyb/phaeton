@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?contentContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="?textFieldTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Notes" />
+
+    <com.bluezero.phaeton.widgets.FilteredEditText
+        android:id="@+id/notesEditText"
+        style="?editText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter any notes or other information, eg. food allergies, medication..."
+        android:imeOptions="actionDone"
+        android:inputType="textMultiLine"
+        android:maxLines="30"
+        android:minLines="10"
+        android:scrollbars="vertical"
+        android:singleLine="false" />
+
+    <CheckBox
+        android:id="@+id/takePictureCheckBox"
+        style="?checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attach picture" />
+
+    <Button
+        android:id="@+id/linkParentContactButton"
+        style="?linkButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:onClick="linkParentContactClick"
+        android:text="Select parent contact..." />
+
+</LinearLayout>

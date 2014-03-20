@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?viewContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title_subtitle_header" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                style="?contentContainer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="?textFieldTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time" />
+
+                <com.bluezero.phaeton.widgets.TimePickerButton
+                    android:id="@+id/timeButton"
+                    style="?dateTimePickerButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="?textFieldTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Medicine Type" />
+
+                <com.bluezero.phaeton.widgets.FilteredEditText
+                    android:id="@+id/typeEditText"
+                    style="?editText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter the type of medicine..."
+                    android:imeOptions="actionNext" />
+
+                <TextView
+                    style="?textFieldTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Amount" />
+
+                <com.bluezero.phaeton.widgets.FilteredEditText
+                    android:id="@+id/amountEditText"
+                    style="?editText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter the amount..."
+                    android:imeOptions="actionNext" />
+
+                <TextView
+                    style="?textFieldTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Details" />
+
+                <com.bluezero.phaeton.widgets.FilteredEditText
+                    android:id="@+id/detailsEditText"
+                    style="?detailsEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:maxLines="10"
+                    android:minLines="3" />
+
+                <CheckBox
+                    android:id="@+id/addReminderCheckBox"
+                    style="?checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add calendar reminder for next dose?" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <include layout="@layout/confirm_button_bar" />
+
+</RelativeLayout>

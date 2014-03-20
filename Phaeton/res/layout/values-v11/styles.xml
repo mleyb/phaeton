@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<style name="AutoCompleteTextViewPhaeton" parent="android:Widget.Holo.AutoCompleteTextView">
+		<item name="android:dropDownSelector">@drawable/list_selector_holo_dark</item>
+		<item name="android:background">@drawable/edit_text_holo_dark</item>
+	</style>
+	
+	<style name="ButtonPhaeton" parent="android:Widget.Holo.Button">
+	 	<item name="android:background">@drawable/btn_default_holo_dark</item>
+	</style>
+	
+	<style name="ImageButtonPhaeton" parent="android:Widget.Holo.ImageButton">
+	 	<item name="android:background">@drawable/btn_default_holo_dark</item>
+	</style>
+	
+	<style name="SpinnerPhaeton" parent="android:Widget.Holo.Spinner">
+	    <item name="android:layout_marginTop">10dip</item>
+	    <item name="android:background">@drawable/spinner_background_holo_dark</item>
+	    <item name="android:dropDownSelector">@drawable/list_selector_holo_dark</item>
+	</style>
+	
+	<style name="ProgressBarPhaeton" parent="android:Widget.Holo.ProgressBar.Horizontal">
+	    <item name="android:progressDrawable">@drawable/progress_horizontal_holo_dark</item>
+	    <item name="android:indeterminateDrawable">@drawable/progress_indeterminate_horizontal_holo_dark</item>
+	    <item name="android:minHeight">32dip</item>
+      	<item name="android:maxHeight">32dip</item>
+	</style>
+	
+	<style name="SeekBarPhaeton" parent="android:Widget.Holo.SeekBar">
+	    <item name="android:progressDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
+	    <item name="android:indeterminateDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
+	    <item name="android:thumb">@drawable/scrubber_control_selector_holo_dark</item>
+	</style>
+	
+	<style name="TogglePhaeton" parent="android:Widget.Holo.Button.Toggle">
+	    <item name="android:background">@drawable/btn_toggle_holo_dark</item>
+	</style>
+
+	
+	
+	
+	
+	
+	
+	
+	<!-- 
+	
+	<style name="list_item_phaeton">	    
+		<item name="android:background">@drawable/list_item</item>
+		<item name="android:textColor">@color/text_large</item>
+		<item name="android:textSize">18sp</item>
+		<item name="android:shadowDy">1.0</item>
+		<item name="android:shadowRadius">1</item>
+		<item name="android:shadowColor">#888</item>
+		<item name="android:paddingTop">10sp</item>
+		<item name="android:paddingBottom">10sp</item>
+		<item name="android:paddingLeft">5sp</item>
+		<item name="android:paddingRight">5sp</item>
+		<item name="android:focusable">false</item>
+		<item name="android:clickable">false</item>		
+		<item name="android:layout_marginTop">2dip</item>
+		<item name="android:layout_marginBottom">2dip</item>
+		<item name="android:layout_marginLeft">2dip</item>
+		<item name="android:layout_marginRight">2dip</item>		
+	</style>
+	
+	<style name="list_item_large_phaeton">
+		<item name="android:background">@drawable/list_item_large</item>		
+		<item name="android:paddingTop">10sp</item>
+		<item name="android:paddingBottom">10sp</item>
+		<item name="android:paddingLeft">5sp</item>
+		<item name="android:paddingRight">5sp</item>
+		<item name="android:focusable">false</item>
+		<item name="android:clickable">false</item>
+		<item name="android:layout_marginTop">2dip</item>
+		<item name="android:layout_marginBottom">2dip</item>
+		<item name="android:layout_marginLeft">2dip</item>
+		<item name="android:layout_marginRight">2dip</item>		
+	</style>	
+	
+	-->
+	
+	
+	
+</resources>

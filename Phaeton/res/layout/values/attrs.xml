@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- View styles -->
+	
+	<attr name="textSubheader" format="reference" />
+	<attr name="textExtraLarge" format="reference" />
+	<attr name="textExtraLargeBold" format="reference" />
+	<attr name="textLarge" format="reference" />
+	<attr name="textLargeBold" format="reference" />
+	<attr name="textRegular" format="reference" />	
+	<attr name="textRegularBold" format="reference" />
+	<attr name="textFieldTitle" format="reference" />
+	<attr name="textError" format="reference" />
+	<attr name="textToast" format="reference" />
+		
+	<attr name="checkBox" format="reference" />
+	
+	<attr name="viewContainer" format="reference" />
+	<attr name="contentContainer" format="reference" />
+	
+	<attr name="confirmButton" format="reference" />
+	<attr name="linkButton" format="reference" />
+	
+	<attr name="listView" format="reference" />
+	<attr name="listDivider" format="reference" />
+	<attr name="listItem" format="reference" />
+	<attr name="listItemLarge" format="reference" />
+	
+	<attr name="editText" format="reference"/>
+	<attr name="detailsEditText" format="reference"/>
+	
+	<attr name="dateTimePickerButton" format="reference"/>
+	
+	<attr name="progressBar" format="reference"/>
+	
+	<!-- Attributes -->
+	
+	<attr name="pageMargin" format="reference|dimension" />
+	<attr name="contentLeftMargin" format="reference|dimension" />
+
+</resources>

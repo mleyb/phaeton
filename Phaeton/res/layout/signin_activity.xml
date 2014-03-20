@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	style="?viewContainer">
+    
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+
+		<include layout="@layout/title_subtitle_header" />        	   
+					
+		<LinearLayout 
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent" 
+			android:orientation="vertical" 
+			style="?contentContainer">
+		
+			<Button android:id="@+id/signInWithGoogleButton" 
+			    	android:layout_width="280dp" 
+			    	android:layout_height="wrap_content" 
+			    	android:onClick="signInWithGoogleClick" 
+			    	android:text="Sign in with Google" 
+			    	android:drawableLeft="@drawable/google" 
+			    	android:layout_gravity="center"			    	
+			    	android:padding="5dp"
+			    	style="?confirmButton" />			
+					
+			<!-- 
+			<com.google.android.gms.common.SignInButton
+    			android:id="@+id/sign_in_button"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content" />
+    		-->
+			
+			<ProgressBar 
+			    android:id="@+id/signInProgressBar" 
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:layout_marginTop="30dp"
+			    android:layout_gravity="center"
+			    android:visibility="invisible"
+			    android:indeterminateOnly="true"
+			    style="?progressBar" />
+	    
+			<TextView
+				android:id="@+id/messageTextView"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:padding="5dip"
+		    	android:layout_marginTop="10dp"
+		    	android:gravity="center"
+		    	style="?textRegular" />
+			
+		</LinearLayout>			
+		
+    </LinearLayout>           
+    
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	style="?viewContainer">
+    
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+		<include layout="@layout/title_subtitle_header" />
+
+		<ScrollView
+			android:layout_width="fill_parent"
+        	android:layout_height="fill_parent">
+		
+			<LinearLayout android:layout_width="fill_parent" 
+			    android:layout_height="fill_parent" 
+			    android:orientation="vertical" 
+			    style="?contentContainer">
+		
+		        <TextView
+		            android:id="@+id/startTextView"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:text="@string/start"
+		            style="?textFieldTitle" />
+		
+		        <com.bluezero.phaeton.widgets.TimePickerButton 
+        			android:id="@+id/startTimeButton" 
+        			android:layout_width="fill_parent" 
+        			android:layout_height="wrap_content" 
+        			style="?dateTimePickerButton" />	 
+		
+		        <TextView
+		            android:id="@+id/endTextView"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:text="@string/end"
+		            style="?textFieldTitle" />
+		
+		        <com.bluezero.phaeton.widgets.TimePickerButton 
+        			android:id="@+id/endTimeButton" 
+        			android:layout_width="fill_parent" 
+        			android:layout_height="wrap_content" 
+        			style="?dateTimePickerButton" />	 
+        					        
+		        <TextView
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="Details"
+			        style="?textFieldTitle" />
+			
+				<com.bluezero.phaeton.widgets.FilteredEditText
+			        android:id="@+id/detailsEditText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+					android:lines="2"
+					android:maxLines="5"
+					android:imeOptions="actionDone"
+					style="?detailsEditText" />
+		        
+			</LinearLayout>
+	    					
+		</ScrollView>
+			
+    </LinearLayout>
+    
+    <include layout="@layout/confirm_button_bar" />
+        
+</RelativeLayout>
+
+
+
+
+
+
+    
+	
+		
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+

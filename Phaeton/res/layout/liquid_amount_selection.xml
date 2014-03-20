@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">    
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    
+	    <TextView
+		    style="?textFieldTitle"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Amount" />			
+				
+		<RelativeLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent" >				
+			
+		    <EditText
+		    	android:id="@+id/amountEditText"
+		    	style="?editText"
+		    	android:layout_width="100dip"
+		    	android:layout_height="wrap_content"
+		    	android:inputType="numberDecimal" />		
+		    
+			<RadioGroup
+			    android:id="@+id/unitRadioGroup"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="10dp"
+			    android:layout_toRightOf="@+id/amountEditText">
+			
+			    <RadioButton
+			        android:id="@+id/ozRadioButton"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:checked="true"
+			        android:text="fl oz" />
+			
+			    <RadioButton
+			        android:id="@+id/mlRadioButton"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="ml" />
+			</RadioGroup>
+
+		</RelativeLayout>			
+				
+	</LinearLayout>
+		
+</merge>   

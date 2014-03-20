@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <dimen name="page_margin">5sp</dimen>
+ 	<dimen name="content_left_margin">8sp</dimen>
+    
+	<!-- =============================================================== -->
+ 	<!-- Phaeton styles                                                    -->
+	<!-- =============================================================== -->		
+	
+	<!-- Misc  -->
+	
+	<style name="NoTitleText">
+		<item name="android:textSize">0sp</item>
+	    <item name="android:textColor">#00000000</item>
+	</style>
+		
+	<!-- Containers  -->
+	
+ 	<style name="ViewContainerPhaeton">
+        <item name="android:padding">5dip</item>		
+    </style>
+    
+	<style name="ContentContainerPhaeton">
+        <item name="android:padding">5dip</item>		
+    </style> 	 	
+	
+	<!-- Text Fields  -->
+	
+	<style name="TextSubHeaderPhaeton">
+		<item name="android:textColor">@color/text_large</item>
+		<item name="android:textSize">20sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:shadowColor">#000000</item>
+	    <item name="android:shadowDx">1</item>
+	    <item name="android:shadowDy">1</item>
+	    <item name="android:shadowRadius">2</item>
+	</style>
+	
+	<style name="TextExtraLargePhaeton">
+		<item name="android:textColor">@color/text_large</item>
+		<item name="android:textSize">36sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:shadowColor">#000000</item>
+	    <item name="android:shadowDx">1</item>
+	    <item name="android:shadowDy">1</item>
+	    <item name="android:shadowRadius">2</item>
+	</style>
+	
+	<style name="TextExtraLargeBoldPhaeton" parent="TextExtraLargePhaeton">
+		<item name="android:textStyle">bold</item>
+	</style>
+	
+	<style name="TextLargePhaeton">
+		<item name="android:textColor">@color/text_large</item>
+		<item name="android:textSize">22sp</item>
+		<item name="android:shadowColor">#000000</item>
+	    <item name="android:shadowDx">1</item>
+	    <item name="android:shadowDy">1</item>
+	    <item name="android:shadowRadius">2</item>
+	</style>
+	
+	<style name="TextLargeBoldPhaeton" parent="TextLargePhaeton">
+	    <item name="android:textStyle">bold</item>
+	</style>
+	
+	<style name="TextRegularPhaeton">
+		<item name="android:textColor">@color/text_regular</item>
+		<item name="android:textSize">18sp</item>
+		<item name="android:shadowColor">#000000</item>
+	    <item name="android:shadowDx">1</item>
+	    <item name="android:shadowDy">1</item>
+	    <item name="android:shadowRadius">2</item>
+	</style>
+	
+	<style name="TextRegularBoldPhaeton" parent="TextRegularPhaeton">
+		<item name="android:textStyle">bold</item>
+	</style>	
+	
+	<style name="TextFieldTitlePhaeton" parent="TextRegularPhaeton">
+		<item name="android:layout_marginTop">10dip</item>
+	</style>
+	
+	<style name="TextToastPhaeton"  parent="TextRegularBoldPhaeton">
+		<item name="android:textSize">22sp</item>
+	</style>
+	
+	<!-- Check Boxes -->
+	
+	<style name="CheckBoxPhaeton" parent="android:Widget.CompoundButton.CheckBox">
+		<item name="android:textColor">@color/text_regular</item>
+		<item name="android:textSize">18sp</item>
+		<item name="android:shadowColor">#000000</item>
+	    <item name="android:shadowDx">1</item>
+	    <item name="android:shadowDy">1</item>
+	    <item name="android:shadowRadius">2</item>
+		<item name="android:layout_marginTop">10dip</item>
+	</style>
+	
+	<!-- Edit Texts -->
+	
+	<style name="EditTextPhaeton" parent="android:Widget.EditText">
+		<item name="android:background">@drawable/edit_text_holo_dark</item>
+	  	<item name="android:textColor">#ffffff</item>
+	  	<item name="android:layout_marginTop">10dip</item>
+	    <item name="android:scrollHorizontally">false</item>
+	    <item name="android:gravity">top|left</item>
+  	</style>
+
+    <style name="DetailsEditTextPhaeton" parent="EditTextPhaeton">
+	    <item name="android:singleLine">false</item> 
+		<item name="android:inputType">textMultiLine</item>
+		<item name="android:scrollbars">vertical</item>
+		<item name="android:hint">Enter details...</item>
+    </style>
+    
+  	<style name="AutoCompleteTextViewPhaeton" parent="android:Widget.AutoCompleteTextView">
+      	<item name="android:dropDownSelector">@drawable/list_selector_holo_dark</item>
+	  	<item name="android:background">@drawable/edit_text_holo_dark</item>
+	  	<item name="android:textColor">#ffffff</item>
+  	</style>
+		
+	<!-- Buttons -->	
+
+  	<style name="ButtonPhaeton" parent="android:Widget.Button">
+	  	<item name="android:background">@drawable/btn_default_holo_dark</item>
+	  	<item name="android:minHeight">48dip</item>
+	  	<item name="android:minWidth">64dip</item>
+	  	<item name="android:textColor">#ffffff</item>
+  	</style>
+
+  	<style name="ImageButtonPhaeton" parent="android:Widget.ImageButton">
+	  	<item name="android:background">@drawable/btn_default_holo_dark</item>
+  	</style>
+	
+	<style name="DateTimePickerButtonPhaeton" parent="ButtonPhaeton">
+	    <item name="android:layout_marginTop">10dip</item>
+	</style>
+	
+	<style name="ConfirmButtonPhaeton" parent="ButtonPhaeton">
+		<item name="android:layout_margin">5dip</item>
+	    <item name="android:textColor">#ffffff</item>
+	    <item name="android:gravity">center</item>
+	    <item name="android:textSize">22sp</item>
+	    <item name="android:textStyle">bold</item>	   	   
+	    <item name="android:shadowColor">#000000</item>
+	    <item name="android:shadowDx">1</item>
+	    <item name="android:shadowDy">1</item>
+	    <item name="android:shadowRadius">2</item>
+	</style>
+	
+	<style name="LinkButtonPhaeton" parent="TextLargePhaeton">
+	    <item name="android:layout_margin">3dip</item>
+	</style>
+		
+	<style name="RadioButtonPhaeton" parent="android:Widget.CompoundButton.RadioButton">
+      	<item name="android:button">@drawable/btn_radio_holo_dark</item>
+  	</style>
+		
+	<style name="ToggleButtonPhaeton" parent="android:Widget.Button.Toggle">
+      	<item name="android:background">@drawable/btn_toggle_holo_dark</item>
+      	<item name="android:minHeight">48dip</item>
+	  	<item name="android:textColor">#ffffff</item>
+  	</style>
+		
+	<!-- Lists -->
+	
+	<style name="ListPhaeton">
+		<item name="android:padding">5dip</item>
+		<item name="android:listSelector">@drawable/list_item</item>
+		<item name="android:cacheColorHint">#00000000</item>
+		<item name="android:dividerHeight">2dip</item>
+		<item name="android:footerDividersEnabled">false</item>
+		<item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+		<item name="android:scrollbars">vertical</item>					
+	</style>	
+	
+	<style name="ListItemPhaeton">
+	    <item name="android:paddingTop">10dip</item>
+		<item name="android:paddingBottom">10dip</item>
+		<item name="android:background">@drawable/list_item</item>
+	</style>
+	
+	<style name="ListItemLargePhaeton">
+	    <item name="android:paddingTop">5dip</item>
+		<item name="android:paddingBottom">10dip</item>
+		<item name="android:background">@drawable/list_item</item>
+	</style>
+		
+	<style name="ListDividerPhaeton">
+		<item name="android:layout_width">fill_parent</item>		
+		<item name="android:layout_height">2dip</item>
+		<item name="android:layout_marginTop">4dip</item>
+		<item name="android:layout_marginBottom">4dip</item>
+	</style>		    
+	
+	<style name="ListViewPhaeton" parent="android:Widget.ListView">
+		<item name="android:listSelector">@drawable/list_selector_holo_dark</item>
+  	</style>
+
+  	<style name="ListViewPhaeton.White" parent="android:Widget.ListView.White">
+      	<item name="android:listSelector">@drawable/list_selector_holo_dark</item>
+  	</style>
+	
+	<!-- Dialogs -->
+	
+	<style name="DialogPhaeton" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:textColor">@color/text_regular</item>
+		<item name="android:textSize">20sp</item>
+		<item name="android:textStyle">bold</item>
+    </style>
+    
+	<!-- Action Bar -->
+	
+	<style name="ActionBarPhaeton" parent="android:style/Widget.Holo.ActionBar">
+        <item name="android:titleTextStyle">@style/NoTitleText</item>
+        <item name="android:subtitleTextStyle">@style/NoTitleText</item>
+        <item name="android:background">@drawable/ab_solid_phaeton</item>
+	</style>
+  	
+	<!-- Spinners -->
+  	
+  	<style name="SpinnerPhaeton" parent="android:Widget.Spinner">
+  	    <item name="android:layout_marginTop">10dip</item>
+      	<item name="android:background">@drawable/spinner_background_holo_dark</item>
+      	<item name="android:dropDownSelector">@drawable/list_selector_holo_dark</item>
+		<item name="android:textColor">@color/text_regular</item>
+		<item name="android:textSize">18sp</item>
+  	</style>
+
+  	<style name="SpinnerPhaeton.DropDown">
+      	<item name="android:spinnerMode">dropdown</item>
+      	<item name="android:textColor">@color/text_regular</item>
+		<item name="android:textSize">18sp</item>
+  	</style>
+
+	<style name="SpinnerItemPhaeton" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+      	<item name="android:textColor">@color/text_regular</item>
+		<item name="android:textSize">18sp</item>
+  	</style>
+	
+  	<style name="SpinnerDropDownItemPhaeton" parent="android:Widget.DropDownItem.Spinner">
+      	<item name="android:checkMark">@drawable/btn_radio_holo_dark</item>
+      	<item name="android:textColor">@color/text_regular</item>
+		<item name="android:textSize">18sp</item>
+  	</style>
+  	
+	<!-- Progress Bars -->
+	
+  	<style name="ProgressBarPhaeton" parent="android:Widget.ProgressBar.Horizontal">
+      	<item name="android:progressDrawable">@drawable/progress_horizontal_holo_dark</item>
+      	<item name="android:indeterminateDrawable">@drawable/progress_indeterminate_horizontal_holo_dark</item>
+      	<item name="android:minHeight">32dip</item>
+      	<item name="android:maxHeight">32dip</item>
+  	</style>
+
+	<!-- Seek Bars -->
+	
+  	<style name="SeekBarPhaeton" parent="android:Widget.SeekBar">
+      	<item name="android:progressDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
+      	<item name="android:indeterminateDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
+      	<item name="android:minHeight">13dip</item>
+      	<item name="android:maxHeight">13dip</item>
+      	<item name="android:thumb">@drawable/scrubber_control_selector_holo_dark</item>
+      	<item name="android:thumbOffset">16dip</item>
+      	<item name="android:paddingLeft">16dip</item>
+      	<item name="android:paddingRight">16dip</item>
+  	</style>
+    
+</resources>
